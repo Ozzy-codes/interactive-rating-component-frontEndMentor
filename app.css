@@ -20,6 +20,15 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
+  background:var(--very-dark-blue);
+  color: white;
+}
+body > * {
+  background: var(--dark-blue);
+  margin: 0 1rem;
+  /* potentially add padding: 2rem 1rem */
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .attribution {
