@@ -10,6 +10,7 @@
   --orange: hsl(25, 97%, 53%);
 }
 
+/* Composition */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -34,6 +35,27 @@ body > * {
 body > * > * + * {
   margin-top: 1rem;
 }
+
+
+/* Blocks */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+button {
+  width: 100%;
+  background: var(--orange);
+  padding: 1rem;
+  border: 0;
+  border-radius: 2rem;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+}
+
 /* Utilities */
 .flex {
   display: flex;
@@ -51,12 +73,4 @@ body > * > * + * {
   border-radius: 50%;
   height: 1rem;
   width: 1rem;
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }
