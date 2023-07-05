@@ -30,6 +30,9 @@ body > * {
   padding: 1rem;
   border-radius: 1rem;
 }
+body > * > * + * {
+  margin-top: 1rem;
+}
 
 .attribution {
   font-size: 11px;
