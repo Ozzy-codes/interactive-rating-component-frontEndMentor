@@ -5,6 +5,7 @@
   --light-grey: hsl(217, 12%, 63%);
   --medium-grey: hsl(216, 12%, 54%);
   --dark-blue: hsl(213, 19%, 18%);
+  --dark-blue-light: hsl(213, 19%, 23%);
   --very-dark-blue: hsl(216, 12%, 8%);
   --orange: hsl(25, 97%, 53%);
 }
@@ -32,6 +33,24 @@ body > * {
 }
 body > * > * + * {
   margin-top: 1rem;
+}
+/* Utilities */
+.flex {
+  display: flex;
+}
+.flex_justify_space-between {
+  justify-content: space-between;
+}
+.flex_center {
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  padding: 1.5rem;
+  background: var(--dark-blue-light);
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
 }
 
 .attribution {
