@@ -77,3 +77,6 @@ button {
 .text_color {
   color:var(--medium-grey)
 }
+.hide_display {
+  display: none;
+}
