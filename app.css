@@ -29,11 +29,8 @@ body > * {
   background: var(--dark-blue);
   margin: 0 1rem;
   /* potentially add padding: 2rem 1rem */
-  padding: 1rem;
+  padding: 2rem 1rem;
   border-radius: 1rem;
-}
-body > * > * + * {
-  margin-top: 1rem;
 }
 
 
