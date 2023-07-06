@@ -58,6 +58,12 @@ margin-top:1.25rem;
 .submissionCard > *+* {
 margin-top:1.25em;
 }
+.ranked_score {
+  padding: 0.5rem 0.75rem;
+    border-radius: 2rem;
+    background: var(--dark-blue-light);
+    color: var(--orange);
+}
 
 /* Utilities */
 .flex {
