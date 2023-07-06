@@ -89,3 +89,11 @@ margin-top:1.25em;
 .hide_display {
   display: none;
 }
+
+/* Exceptions */
+.extra_margin {
+  margin: 1.5rem 0 0.5rem 0;
+}
+.minus_margin {
+  margin-top:.75rem;
+}
