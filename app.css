@@ -55,6 +55,27 @@ button {
   font-size: 1rem;
   letter-spacing: .15rem;
 }
+button:active {
+  color: var(--orange);
+  background: white;
+}
+.circle {
+  padding: 1.5rem;
+  background: var(--dark-blue-light);
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+}
+.item:hover {
+  background: var(--light-grey);
+  color: white;
+}
+.active {
+  background: var(--orange);
+}
+.active > * {
+  color:white;
+}
 
 /* Utilities */
 .flex {
@@ -66,13 +87,6 @@ button {
 .flex_center {
   justify-content: center;
   align-items: center;
-}
-.circle {
-  padding: 1.5rem;
-  background: var(--dark-blue-light);
-  border-radius: 50%;
-  height: 1rem;
-  width: 1rem;
 }
 .text_color {
   color:var(--medium-grey)
