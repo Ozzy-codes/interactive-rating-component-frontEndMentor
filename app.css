@@ -67,6 +67,12 @@ button {
   justify-content: center;
   align-items: center;
 }
+.flex_column {
+  flex-direction: column;
+}
+.text_center {
+  text-align: center;
+}
 .circle {
   padding: 1.5rem;
   background: var(--dark-blue-light);
