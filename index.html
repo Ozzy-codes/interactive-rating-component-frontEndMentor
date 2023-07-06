@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon"
     type="image/png"
@@ -18,19 +17,18 @@
 </head>
 
 <body>
-
-  <!-- Rating state start -->
-  <main>
+  <main class="ratingCard">
     <div class="circle flex flex_center">
       <img src="./images/icon-star.svg"
         alt="Star Icon">
     </div>
     <h1>How did we do?</h1>
-    <p class="text_color">Please let us know how we did with your support request. All feedback is
+    <p class="text_color minus_margin">Please let us know how we did with your support request. All
+      feedback is
       appreciated
       to help us improve our offering!</p>
 
-    <div class="flex flex_justify_space-between">
+    <div class="flex flex_justify_space-between extra_margin">
       <!-- Can generate a list of elements rendered on the page with styling  -->
       <div id="selected_item_1"
         class="circle flex flex_center text_color item">
@@ -53,7 +51,7 @@
         <div>5</div>
       </div>
     </div>
-    <button>SUBMIT</button>
+    <button id="myButton">SUBMIT</button>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
         target="_blank">Frontend Mentor</a>.
@@ -61,21 +59,15 @@
     </div>
   </main>
 
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  <!-- You selected -->
-  <!-- Add rating here -->
-  <!-- out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support,
-  don’t hesitate to get in touch! -->
-
-  <!-- Thank you state end -->
-
+  <div class="submissionCard hide_display text_center flex flex_center flex_column">
+    <img src="./images/illustration-thank-you.svg"
+      alt="Trail of credit card into phone. Phone prints a receipt">
+    <div class="ranked_score">You selected # out of 5</div>
+    <h2>Thank you!</h2>
+    <p class="text_color">We appreciate you taking the time to give a rating. If you ever need more
+      support,
+      don’t hesitate to get in touch!</p>
+  </div>
 
 </body>
 

@@ -29,11 +29,8 @@ body > * {
   background: var(--dark-blue);
   margin: 0 1rem;
   /* potentially add padding: 2rem 1rem */
-  padding: 1rem;
+  padding: 2rem 1rem;
   border-radius: 1rem;
-}
-body > * > * + * {
-  margin-top: 1rem;
 }
 
 
@@ -76,6 +73,18 @@ button:active {
 .active > * {
   color:white;
 }
+.ratingCard > *+* {
+margin-top:1.25rem;
+}
+.submissionCard > *+* {
+margin-top:1.25em;
+}
+.ranked_score {
+  padding: 0.5rem 0.75rem;
+    border-radius: 2rem;
+    background: var(--dark-blue-light);
+    color: var(--orange);
+}
 
 /* Utilities */
 .flex {
@@ -88,6 +97,23 @@ button:active {
   justify-content: center;
   align-items: center;
 }
+.flex_column {
+  flex-direction: column;
+}
+.text_center {
+  text-align: center;
+}
 .text_color {
   color:var(--medium-grey)
+}
+.hide_display {
+  display: none;
+}
+
+/* Exceptions */
+.extra_margin {
+  margin: 1.5rem 0 0.5rem 0;
+}
+.minus_margin {
+  margin-top:.75rem;
 }
