@@ -21,6 +21,7 @@ body {
   font-family: 'Overpass', sans-serif;
   height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
   background:var(--very-dark-blue);
   color: white;
@@ -31,6 +32,13 @@ body > * {
   /* potentially add padding: 2rem 1rem */
   padding: 2rem 1rem;
   border-radius: 1rem;
+  max-width:400px;
+}
+@media(min-width:400px) {
+  body > * {
+    padding: 2rem 2rem;
+    border-radius: 1.25rem
+  }
 }
 p {
   font-size:15px;
