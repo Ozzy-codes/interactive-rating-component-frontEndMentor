@@ -32,6 +32,9 @@ body > * {
   padding: 2rem 1rem;
   border-radius: 1rem;
 }
+p {
+  font-size:15px;
+}
 
 
 /* Blocks */
