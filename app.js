@@ -6,6 +6,8 @@ const selected_item_5 = document.querySelector("#selected_item_5")
 const myButton = document.querySelector("#myButton")
 const ratingCard = document.querySelector(".ratingCard")
 const submissionCard = document.querySelector(".submissionCard")
+const score_options = document.querySelector("#score_options")
+const selected_score = document.querySelector("#selected_score")
 
 selected_item_1.addEventListener("click", function (event) {
   selected_item_1.classList.toggle("active")
@@ -118,6 +120,11 @@ myButton.addEventListener("click", () => {
   ) {
     ratingCard.classList.toggle("hide_display")
     submissionCard.classList.toggle("hide_display")
+    for (let index = 0; index < score_options.children.length; index++) {
+      if (score_options.children[index].classList.contains("active")) {
+        return (selected_score.innerText = index + 1)
+      }
+    }
   } else {
     alert(
       "Please rate our service to continue, your feedback is greatly appreciated!"
