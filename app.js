@@ -109,6 +109,18 @@ selected_item_5.addEventListener("click", function (event) {
 })
 
 myButton.addEventListener("click", () => {
-  ratingCard.classList.toggle("hide_display")
-  submissionCard.classList.toggle("hide_display")
+  if (
+    selected_item_1.classList.contains("active") ||
+    selected_item_2.classList.contains("active") ||
+    selected_item_3.classList.contains("active") ||
+    selected_item_4.classList.contains("active") ||
+    selected_item_5.classList.contains("active")
+  ) {
+    ratingCard.classList.toggle("hide_display")
+    submissionCard.classList.toggle("hide_display")
+  } else {
+    alert(
+      "Please rate our service to continue, your feedback is greatly appreciated!"
+    )
+  }
 })
